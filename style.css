@@ -167,7 +167,6 @@ main{
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    overflow: hidden;
 }
 
 
@@ -192,7 +191,7 @@ main{
 }
 
 .class{
-    margin: 0 30%;
+    margin: 0 20%;
     padding: 1.5em;
     margin-bottom: 1em;
     border-radius: 10px;
