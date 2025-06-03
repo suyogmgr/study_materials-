@@ -1,10 +1,3 @@
-/*function show(element){
-    element.querySelector('.dropdown').classList.add('show');
-}
-
-function hide(element){
-    element.querySelector('.dropdown').classList.remove('show');
-}*/
 
 function slideOut(){
     document.getElementById('sidebar').classList.remove('show');
@@ -17,7 +10,16 @@ function slideIn(){
 }
 
 
-
 function list(element){
-    element.querySelector('.dropdown').classList.toggle('show');
+    document.querySelectorAll('.dropdown.show').forEach(drop =>{
+        if(!element.contains(drop)){
+            drop.classList.remove('show');
+        }
+    });
+
+    const dropdown = element.querySelector('.dropdown');
+
+    if(dropdown){
+        dropdown.classList.toggle('show');
+    }
 }
