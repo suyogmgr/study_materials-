@@ -1,0 +1,37 @@
+.bbs-cont{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.bbs-sems{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 4em;
+}
+
+.sem-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 300ms ease;
+    border: 2px solid black;
+    padding: 30px;
+    box-shadow: 3px 4px 8px rgba(75, 82, 191, 0.5);
+}
+
+.sem-card:hover{
+    transform: translateY(-5px);
+}
+
+.sem-card p{
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,21 @@
+.test {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    height: 100dvh;
+}
+
+.test-title h1 {
+    z-index: 10000;
+    font-size: 2rem;
+    text-align: center;
+    color: #000;
+}
+
+.pdf {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

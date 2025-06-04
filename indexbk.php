@@ -9,7 +9,6 @@
     <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body> 
-
     <div class="root">
         <nav>
             <div class="nav-logo">
@@ -21,6 +20,8 @@
                     <li><a href="#" title="Home">Home</a></li>
                     <li><a href="#" title="About">About</a></li>
                     <li><a href="#" title="Contact">Contact</a></li>
+                    <li><a href="#" title="Contact">Contribute</a></li>
+
                 </ul>
             </div>
 
@@ -36,6 +37,8 @@
                     <li><a href="#" title="Home">Home</a></li>
                     <li><a href="#" title="About">About</a></li>
                     <li><a href="#" title="Contact">Contact</a></li>
+                    <li><a href="#" title="Contact">Contribute</a></li>
+
                 </ul>
             </div>
         </nav>
@@ -60,7 +63,7 @@
                                 <li><a href="#">Management class 12</a></li>
                                 <li><a href="#">Arts class 12</a></li>
                                 
-                        </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>  
@@ -71,11 +74,11 @@
                         </div>
                         <div class="dropdown">
                             <ul class="dropdown-list">
-                                <li><a href="#">BBS</a></li>
+                                <li><a href="./notes/BBS.php">BBS</a></li>
                                 <li><a href="#">BBA</a></li>
                                 <li><a href="#">B.ED</a></li>
                                 <li><a href="#">BA</a></li>
-                        </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>  

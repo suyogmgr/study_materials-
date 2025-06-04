@@ -1,0 +1,33 @@
+
+.bbs-first-cont{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.first-title{
+    padding-bottom: 5em;
+}
+
+.first-subjects{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 4em;
+    padding: 0 5em;
+}
+
+
+
+.sub-card{
+    border: 2px solid black;
+    padding: 30px;
+    box-shadow: 3px 4px 8px rgba(75, 82, 191, 0.5);
+    border-radius: 8px;
+}
+

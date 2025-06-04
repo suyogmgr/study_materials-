@@ -1,0 +1,117 @@
+@import url(./global.css);
+
+/*===========NAVBAR===========*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 2em;
+    align-items: center;
+    z-index: 1000;
+    height: 3.5em;
+    
+}
+
+.nav-logo img{
+    width: 50px;   
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.nav-links ul li{
+    position: relative;
+}
+
+.nav-links ul li::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    padding-top: 1px;
+    background-color: rgb(10, 31, 137);
+    transform-origin: left;
+    transition: all 300ms ease;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.toggle-navbar{
+    display: none;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    background-color: red;
+    height: 100dvh;
+    width: 250px;
+    transform: translateX(100%);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
+    transition: all 200ms ease;
+}
+
+.sidebar.close{
+    transform: translateX(100%);
+}
+
+.sidebar.show{
+    transform: translateX(0);
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.sidebar ul li{
+    width: 100%;
+    padding:1em 0;
+    transition: 300ms ease;
+}
+
+.sidebar ul li:hover{
+    background-color: blue;
+}
+
+@media screen and (max-width: 700px){
+
+    nav{
+        margin: 0;
+        padding: 0 .5em;
+    }
+
+    .toggle-navbar{
+        display: block;
+    }
+
+    .toggle-navbar svg{
+        color: #000;
+        background-color: black;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .sidebar{
+        display: block;
+    }
+
+}

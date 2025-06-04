@@ -1,0 +1,84 @@
+/*===========MAIN SECTION===========*/
+
+main{
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+
+.main-title{
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.main-title span{
+    font-family: "Oswald", sans-serif;
+    font-size: 2.8em;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.class-cont{
+    display: grid;
+   /* grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));*/
+    grid-template-columns: auto;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+
+.class{
+    margin: 0 20%;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-in-out;
+
+}
+
+.class:hover{
+    transform: translateY(-5px);
+}
+
+.class h3{
+    color: #000;
+    letter-spacing: 3px;
+}
+
+.note-title{
+    text-align: center;
+}
+
+.dropdown{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.dropdown-list li{
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.dropdown li a:hover{
+    color: #0056b3;
+}
+
+.dropdown.show{
+    margin-top: 1em;
+    max-height: 500px;
+    opacity: 1;
+}
